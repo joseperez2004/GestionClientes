@@ -1,5 +1,6 @@
 import { View, StyleSheet, Text, ScrollView, TouchableOpacity } from 'react-native';
-import { MaterialIcons, FontAwesome, Octicons } from '@expo/vector-icons';
+import { MaterialIcons, Octicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function ListarClientes({ navigation, clientes }) {
   return (
@@ -7,14 +8,15 @@ export default function ListarClientes({ navigation, clientes }) {
       {/* Encabezado con título y botón de agregar */}
       <View style={styles.header}>
         <View style={styles.titleContainer}>
-          <MaterialIcons name="list-alt" size={28} color="#2E8B57" />
+          <MaterialIcons name="list-alt" size={28} color="black" />
           <Text style={styles.titulo}>Lista de Clientes</Text>
         </View>
         <TouchableOpacity 
           onPress={() => navigation.navigate('Home')} 
           style={styles.addButton}
         >
-          <FontAwesome name="plus-circle" size={28} color="#2E8B57" />
+          <Ionicons name="person-add" size={28} color="black" />
+       
         </TouchableOpacity>
       </View>
 

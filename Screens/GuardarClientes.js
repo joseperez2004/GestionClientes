@@ -40,7 +40,7 @@ export default function GuardarClientes({ onGuardar }) {
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.container}>
-        <Text style={styles.formTitle}>Registro de Datos del Cliente</Text>
+        
         
         <Text style={styles.label}>Cédula:</Text>
         <TextInput
